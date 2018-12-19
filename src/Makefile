@@ -1,9 +1,12 @@
 INCDIR= ../include
 OBJDIR= /obj
 
-all: main.c
-	gcc -g -Wall -o bfc main.c
+all: 
+	gcc -c -Wall main.c
+	gcc -c -Wall tape.c
+	gcc main.o tape.o -o bfc
 
 clean:
 		rm bfc
 		rm -rf bfc.dSYM
+		rm *.o
