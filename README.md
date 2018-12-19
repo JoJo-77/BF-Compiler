@@ -7,6 +7,7 @@ This is my first dip into the creation of a complier. This project revolves arou
 ## Brainfuck in a Table
 | Command | Action |
 |:-------:|:------:|
+|         |        |
 
 ## Design Choices:
 - Programming Language: C
