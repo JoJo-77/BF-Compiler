@@ -1,18 +1,22 @@
 #include "../include/tape.h"
 
+struct node* head;
+
 void init(struct tape* memory)
 {
-	printf("%p\n",memory);
-	*memory -> current -> next = (struct node* )nullptr;
-	*memory -> current -> prev = NULL;
-	*memory -> current -> data = 0;
-	//printf("%d\n",memory->current->data);
-
+	memory -> current = malloc(sizeof(struct node));
+	memory -> current -> data = 20;
+	memory -> size = 0; 
+	head = memory -> current;
 }
 
-struct node* next()
+struct node* next(struct tape* memory)
 {
-	return NULL;	
+	if(memory->current->next == NULL)
+	{
+		
+	}
+
 }
 
 struct node* prev()
@@ -20,12 +24,7 @@ struct node* prev()
 	return NULL;	
 }
 
-struct node* add()
-{
-	return NULL;	
-}
-
-void destroy()
+void destroy(struct tape* memory)
 {
 	//return NULL;	
 }

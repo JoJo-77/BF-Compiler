@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#define nprint print_node();
+#define lprint print_tape();
 struct node
 {
 	char data;
@@ -22,6 +23,4 @@ struct node* next();
 
 struct node* prev();
 
-struct node* add();
-
-void destroy();
+void destroy(struct tape* memory);
