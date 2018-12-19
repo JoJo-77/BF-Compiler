@@ -7,7 +7,14 @@ This is my first dip into the creation of a complier. This project revolves arou
 ## Brainfuck in a Table
 | Command | Action |
 |:-------:|:------:|
-|         |        |
+|``` > ``` | move pointer one to right |
+|``` < ``` | move pointer one to the left |
+|``` + ``` | increment byte at pointer |
+|``` - ``` | decrement byte at pointer |
+|``` . ``` | output byte at pointer |
+|``` , ``` | accept one byte of input at pointer |
+|``` [ ``` | while pointer is not 0, do { |
+|``` ] ``` | close while loop |
 
 ## Design Choices:
 - Programming Language: C
